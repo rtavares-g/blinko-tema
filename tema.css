@@ -1,0 +1,216 @@
+/* Tema "Raspberry Pi" para o Blinko — mesma paleta do Cockpit, Duplicati, Pi Paste e Clipboard Bridge.
+   Fonte: ~/Projetos/blinko-tema/tema.css → vai no release.zip do plugin; o Blinko carrega sozinho
+   todo .css que estiver na pasta do plugin (e tira quando o plugin é desativado).
+   O Blinko tira as cores de dois conjuntos de variáveis em <html class="dark|light">:
+     --background, --primary, --card…  (dele, cores CSS normais)
+     --heroui-*                         (dos componentes HeroUI: "matiz saturação% luminosidade%", sem hsl())
+   A cor primária escolhida em Preferências fica no style inline do <html>; o !important passa por cima.
+   Escuro: fundo #191216, card #261b21, texto #faf0f4, acento rosa #ef7295 (texto #2b0713)
+   Claro:  fundo #faf5f6, card #ffffff, texto #291c22, acento vinho #c51a4a (texto #fff) */
+
+/* ============================== ESCURO ============================== */
+html.dark {
+  --primary: #ef7295 !important;
+  --primary-foreground: #2b0713 !important;
+
+  --secondbackground: #191216;          /* fundo da página */
+  --background: #261b21;                /* cards, barra lateral, editor */
+  --foreground: #faf0f4;
+  --hover: hsl(328 19% 20%);
+  --hover-foreground: hsl(331 12% 66%);
+  --desc: hsl(331 12% 60%);             /* datas, textos secundários */
+  --ignore: hsl(330 12% 42%);
+  --tag: #ef7295;
+  --tag-foreground: #2b0713;
+  --scrollbar: hsl(328 20% 25%);
+  --popover: #261b21;
+  --popover-foreground: #faf0f4;
+  --muted: hsl(328 19% 20%);
+  --muted-foreground: hsl(331 12% 66%);
+  --card: #261b21;
+  --card-foreground: #faf0f4;
+  --border: hsl(328 19% 18%);
+  --input: hsl(328 20% 25%);
+  --secondary: #ef7295;
+  --secondary-foreground: #2b0713;
+  --accent: hsl(328 19% 20%);
+  --accent-foreground: #faf0f4;
+  --ring: #ef7295;
+  --header: rgb(25 18 22 / 0.85);
+  --md-editor-bg: #261b21;
+  --md-editor-text: #faf0f4;
+  --md-editor-separator: hsl(329 16% 32%);
+  --md-editor-border: hsl(328 19% 20%);
+  --shadow: 0 0 1px 1px hsl(328 19% 20%);
+  --swiper-3d-shadow: rgb(250 240 244 / 12%);
+
+  /* HeroUI: neutros grafite-vinho */
+  --heroui-background: 325.7 16.3% 8.4%;
+  --heroui-foreground: 336 50% 96.1%;
+  --heroui-divider: 336 50% 96.1%;
+  --heroui-overlay: 326 17% 4%;
+  --heroui-focus: 343.2 79.6% 69.2%;
+  --heroui-content1: 327.3 16.9% 12.7%;
+  --heroui-content1-foreground: 336 50% 96.1%;
+  --heroui-content2: 328 19% 18%;
+  --heroui-content2-foreground: 336 40% 93%;
+  --heroui-content3: 328 20% 25%;
+  --heroui-content3-foreground: 332 35% 88%;
+  --heroui-content4: 329 16% 32%;
+  --heroui-content4-foreground: 332 35% 85%;
+  --heroui-default-50: 327.3 16.9% 12.7%;
+  --heroui-default-100: 328 19% 18%;
+  --heroui-default-200: 328 20% 25%;
+  --heroui-default-300: 329 16% 32%;
+  --heroui-default-400: 330 12% 42%;
+  --heroui-default-500: 331 12% 60%;
+  --heroui-default-600: 331 15.6% 71.2%;
+  --heroui-default-700: 332 35% 85%;
+  --heroui-default-800: 336 45% 92%;
+  --heroui-default-900: 336 50% 96.1%;
+  --heroui-default: 328 20% 25%;
+  --heroui-default-foreground: 336 50% 96.1%;
+  --heroui-foreground-50: 327.3 16.9% 12.7%;
+  --heroui-foreground-100: 328 19% 18%;
+  --heroui-foreground-200: 328 20% 25%;
+  --heroui-foreground-300: 329 16% 32%;
+  --heroui-foreground-400: 330 12% 42%;
+  --heroui-foreground-500: 331 12% 60%;
+  --heroui-foreground-600: 331 15.6% 71.2%;
+  --heroui-foreground-700: 332 35% 85%;
+  --heroui-foreground-800: 336 45% 92%;
+  --heroui-foreground-900: 336 50% 96.1%;
+
+  /* HeroUI: acento rosa */
+  --heroui-primary-50: 343 45% 10%;
+  --heroui-primary-100: 343 45% 14%;
+  --heroui-primary-200: 343 50% 19%;
+  --heroui-primary-300: 343 55% 26%;
+  --heroui-primary-400: 343 60% 34%;
+  --heroui-primary-500: 343 70% 45%;
+  --heroui-primary-600: 343 78% 58%;
+  --heroui-primary-700: 343.2 79.6% 69.2%;
+  --heroui-primary-800: 342.9 82.3% 75.7%;
+  --heroui-primary-900: 343 80% 90%;
+  --heroui-primary: 343.2 79.6% 69.2%;
+  --heroui-primary-foreground: 340 72% 9.8%;
+  --heroui-secondary-50: 343 45% 10%;
+  --heroui-secondary-100: 343 45% 14%;
+  --heroui-secondary-200: 343 50% 19%;
+  --heroui-secondary-300: 343 55% 26%;
+  --heroui-secondary-400: 343 60% 34%;
+  --heroui-secondary-500: 343 70% 45%;
+  --heroui-secondary-600: 343 78% 58%;
+  --heroui-secondary-700: 343.2 79.6% 69.2%;
+  --heroui-secondary-800: 342.9 82.3% 75.7%;
+  --heroui-secondary-900: 343 80% 90%;
+  --heroui-secondary: 343.2 79.6% 69.2%;
+  --heroui-secondary-foreground: 340 72% 9.8%;
+}
+
+/* ============================== CLARO ============================== */
+html.light {
+  --primary: #c51a4a !important;
+  --primary-foreground: #ffffff !important;
+
+  --secondbackground: #faf5f6;
+  --background: #ffffff;
+  --foreground: #291c22;
+  --hover: hsl(345 30% 94%);
+  --hover-foreground: #75636b;
+  --desc: #75636b;
+  --ignore: hsl(338 12% 67%);
+  --tag: #c51a4a;
+  --tag-foreground: #ffffff;
+  --scrollbar: #eadce1;
+  --popover: #ffffff;
+  --popover-foreground: #291c22;
+  --muted: hsl(345 30% 94%);
+  --muted-foreground: #75636b;
+  --card: #ffffff;
+  --card-foreground: #291c22;
+  --border: #eadce1;
+  --input: #eadce1;
+  --secondary: #c51a4a;
+  --secondary-foreground: #ffffff;
+  --accent: hsl(345 30% 94%);
+  --accent-foreground: #291c22;
+  --ring: #c51a4a;
+  --header: rgb(250 245 246 / 0.9);
+  --md-editor-bg: #ffffff;
+  --md-editor-text: #291c22;
+  --md-editor-separator: hsl(340 20% 82%);
+  --md-editor-border: #eadce1;
+  --shadow: 1px 1px 7px 3px rgb(197 26 74 / 0.08);
+  --swiper-3d-shadow: rgb(41 28 34 / 15%);
+
+  --heroui-background: 0 0% 100%;
+  --heroui-foreground: 332.3 18.8% 13.5%;
+  --heroui-divider: 332.3 18.8% 13.5%;
+  --heroui-focus: 343.2 76.7% 43.7%;
+  --heroui-content1: 0 0% 100%;
+  --heroui-content1-foreground: 332.3 18.8% 13.5%;
+  --heroui-content2: 348 33.3% 97.1%;
+  --heroui-content2-foreground: 332.3 18.8% 13.5%;
+  --heroui-content3: 345 30% 94%;
+  --heroui-content3-foreground: 332.3 18.8% 13.5%;
+  --heroui-content4: 338.6 25% 89%;
+  --heroui-content4-foreground: 332.3 18.8% 13.5%;
+  --heroui-default-50: 348 33.3% 97.1%;
+  --heroui-default-100: 345 30% 94%;
+  --heroui-default-200: 338.6 25% 89%;
+  --heroui-default-300: 340 20% 82%;
+  --heroui-default-400: 338 12% 67%;
+  --heroui-default-500: 335 9% 54%;
+  --heroui-default-600: 333.3 8.3% 42.4%;
+  --heroui-default-700: 333 10% 34%;
+  --heroui-default-800: 333 14% 24%;
+  --heroui-default-900: 332.3 18.8% 13.5%;
+  --heroui-default: 338.6 25% 89%;
+  --heroui-default-foreground: 332.3 18.8% 13.5%;
+  --heroui-foreground-50: 348 33.3% 97.1%;
+  --heroui-foreground-100: 345 30% 94%;
+  --heroui-foreground-200: 338.6 25% 89%;
+  --heroui-foreground-300: 340 20% 82%;
+  --heroui-foreground-400: 338 12% 67%;
+  --heroui-foreground-500: 335 9% 54%;
+  --heroui-foreground-600: 333.3 8.3% 42.4%;
+  --heroui-foreground-700: 333 10% 34%;
+  --heroui-foreground-800: 333 14% 24%;
+  --heroui-foreground-900: 332.3 18.8% 13.5%;
+
+  --heroui-primary-50: 343 77% 97%;
+  --heroui-primary-100: 343 77% 94%;
+  --heroui-primary-200: 343 77% 89%;
+  --heroui-primary-300: 343 77% 82%;
+  --heroui-primary-400: 343 77% 64%;
+  --heroui-primary-500: 343.2 76.7% 43.7%;
+  --heroui-primary-600: 343.3 77.8% 37.1%;
+  --heroui-primary-700: 343 79% 31%;
+  --heroui-primary-800: 343 77% 18%;
+  --heroui-primary-900: 343 77% 7%;
+  --heroui-primary: 343.2 76.7% 43.7%;
+  --heroui-primary-foreground: 0 0% 100%;
+  --heroui-secondary-50: 343 77% 97%;
+  --heroui-secondary-100: 343 77% 94%;
+  --heroui-secondary-200: 343 77% 89%;
+  --heroui-secondary-300: 343 77% 82%;
+  --heroui-secondary-400: 343 77% 64%;
+  --heroui-secondary-500: 343.2 76.7% 43.7%;
+  --heroui-secondary-600: 343.3 77.8% 37.1%;
+  --heroui-secondary-700: 343 79% 31%;
+  --heroui-secondary-800: 343 77% 18%;
+  --heroui-secondary-900: 343 77% 7%;
+  --heroui-secondary: 343.2 76.7% 43.7%;
+  --heroui-secondary-foreground: 0 0% 100%;
+}
+
+/* ============================== COMUNS ============================== */
+html.dark ::selection { background-color: #ef7295; color: #2b0713; }
+html.light ::selection { background-color: #c51a4a; color: #ffffff; }
+
+html.dark .glass-effect { background: rgb(25 18 22 / 0.8); }
+html.light .glass-effect { background: rgb(250 245 246 / 0.85); }
+
+/* Links nas notas seguem o acento */
+.markdown-body a { color: var(--primary); }
