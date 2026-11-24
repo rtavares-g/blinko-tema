@@ -6,12 +6,12 @@
      --heroui-*                         (dos componentes HeroUI: "matiz saturação% luminosidade%", sem hsl())
    A cor primária escolhida em Preferências fica no style inline do <html>; o !important passa por cima.
    Tokens iguais aos do Pi Paste (bg / card / fg / mut / line / soft / acc / green):
-   Escuro: #191216 / #261b21 / #faf0f4 / #c1aab5 / #49303d / #3c202c / #c51a4a / #a2ce72
-   Claro:  #faf5f6 / #ffffff / #291c22 / #75636b / #eadce1 / #fff0f4 / #c51a4a / #47751c */
+   Escuro: #191216 / #261b21 / #faf0f4 / #c1aab5 / #49303d / #3c202c / #d70f47 / #a2ce72
+   Claro:  #faf5f6 / #ffffff / #291c22 / #75636b / #eadce1 / #fff0f4 / #d70f47 / #47751c */
 
 /* ============================== ESCURO ============================== */
 html.dark {
-  --primary: #c51a4a !important;
+  --primary: #d70f47 !important;
   --primary-foreground: #ffffff !important;
 
   --secondbackground: #191216;          /* fundo da página */
@@ -21,7 +21,7 @@ html.dark {
   --hover-foreground: #c1aab5;
   --desc: #c1aab5;             /* datas, textos secundários */
   --ignore: hsl(330 12% 42%);
-  --tag: #c51a4a;
+  --tag: #d70f47;
   --tag-foreground: #ffffff;
   --scrollbar: #49303d;
   --popover: #261b21;
@@ -32,11 +32,11 @@ html.dark {
   --card-foreground: #faf0f4;
   --border: #49303d;
   --input: #49303d;
-  --secondary: #c51a4a;
+  --secondary: #d70f47;
   --secondary-foreground: #ffffff;
   --accent: #3c202c;
   --accent-foreground: #faf0f4;
-  --ring: #c51a4a;
+  --ring: #d70f47;
   --header: rgb(25 18 22 / 0.85);
   --md-editor-bg: #261b21;
   --md-editor-text: #faf0f4;
@@ -89,11 +89,11 @@ html.dark {
   --heroui-primary-300: 343 55% 26%;
   --heroui-primary-400: 343 60% 34%;
   --heroui-primary-500: 343 72% 38%;
-  --heroui-primary-600: 343.2 76.7% 43.7%;
+  --heroui-primary-600: 343.2 87% 45.1%;
   --heroui-primary-700: 343 70% 55%;
   --heroui-primary-800: 343 77% 64%;
   --heroui-primary-900: 343 80% 90%;
-  --heroui-primary: 343.2 76.7% 43.7%;
+  --heroui-primary: 343.2 87% 45.1%;
   --heroui-primary-foreground: 0 0% 100%;
   --heroui-secondary-50: 343 45% 10%;
   --heroui-secondary-100: 343 45% 14%;
@@ -101,11 +101,11 @@ html.dark {
   --heroui-secondary-300: 343 55% 26%;
   --heroui-secondary-400: 343 60% 34%;
   --heroui-secondary-500: 343 72% 38%;
-  --heroui-secondary-600: 343.2 76.7% 43.7%;
+  --heroui-secondary-600: 343.2 87% 45.1%;
   --heroui-secondary-700: 343 70% 55%;
   --heroui-secondary-800: 343 77% 64%;
   --heroui-secondary-900: 343 80% 90%;
-  --heroui-secondary: 343.2 76.7% 43.7%;
+  --heroui-secondary: 343.2 87% 45.1%;
   --heroui-secondary-foreground: 0 0% 100%;
 
   /* HeroUI: verde folha (sucesso, foco) — o --green do Pi Paste #a2ce72 */
@@ -115,7 +115,7 @@ html.dark {
 
 /* ============================== CLARO ============================== */
 html.light {
-  --primary: #c51a4a !important;
+  --primary: #d70f47 !important;
   --primary-foreground: #ffffff !important;
 
   --secondbackground: #faf5f6;
@@ -125,7 +125,7 @@ html.light {
   --hover-foreground: #75636b;
   --desc: #75636b;
   --ignore: hsl(338 12% 67%);
-  --tag: #c51a4a;
+  --tag: #d70f47;
   --tag-foreground: #ffffff;
   --scrollbar: #eadce1;
   --popover: #ffffff;
@@ -136,11 +136,11 @@ html.light {
   --card-foreground: #291c22;
   --border: #eadce1;
   --input: #eadce1;
-  --secondary: #c51a4a;
+  --secondary: #d70f47;
   --secondary-foreground: #ffffff;
   --accent: #fff0f4;
   --accent-foreground: #291c22;
-  --ring: #c51a4a;
+  --ring: #d70f47;
   --header: rgb(250 245 246 / 0.9);
   --md-editor-bg: #ffffff;
   --md-editor-text: #291c22;
@@ -189,24 +189,24 @@ html.light {
   --heroui-primary-200: 343 77% 89%;
   --heroui-primary-300: 343 77% 82%;
   --heroui-primary-400: 343 77% 64%;
-  --heroui-primary-500: 343.2 76.7% 43.7%;
-  --heroui-primary-600: 343.3 77.8% 37.1%;
+  --heroui-primary-500: 343.2 87% 45.1%;
+  --heroui-primary-600: 343.2 87% 38.2%;
   --heroui-primary-700: 343 79% 31%;
   --heroui-primary-800: 343 77% 18%;
   --heroui-primary-900: 343 77% 7%;
-  --heroui-primary: 343.2 76.7% 43.7%;
+  --heroui-primary: 343.2 87% 45.1%;
   --heroui-primary-foreground: 0 0% 100%;
   --heroui-secondary-50: 343 77% 97%;
   --heroui-secondary-100: 343 77% 94%;
   --heroui-secondary-200: 343 77% 89%;
   --heroui-secondary-300: 343 77% 82%;
   --heroui-secondary-400: 343 77% 64%;
-  --heroui-secondary-500: 343.2 76.7% 43.7%;
-  --heroui-secondary-600: 343.3 77.8% 37.1%;
+  --heroui-secondary-500: 343.2 87% 45.1%;
+  --heroui-secondary-600: 343.2 87% 38.2%;
   --heroui-secondary-700: 343 79% 31%;
   --heroui-secondary-800: 343 77% 18%;
   --heroui-secondary-900: 343 77% 7%;
-  --heroui-secondary: 343.2 76.7% 43.7%;
+  --heroui-secondary: 343.2 87% 45.1%;
   --heroui-secondary-foreground: 0 0% 100%;
 
   /* HeroUI: verde folha (sucesso, foco) — o --green do Pi Paste #47751c */
@@ -215,8 +215,8 @@ html.light {
 }
 
 /* ============================== COMUNS ============================== */
-html.dark ::selection { background-color: #c51a4a; color: #ffffff; }
-html.light ::selection { background-color: #c51a4a; color: #ffffff; }
+html.dark ::selection { background-color: #d70f47; color: #ffffff; }
+html.light ::selection { background-color: #d70f47; color: #ffffff; }
 
 html.dark .glass-effect { background: rgb(25 18 22 / 0.8); }
 html.light .glass-effect { background: rgb(250 245 246 / 0.85); }
@@ -225,7 +225,7 @@ html.light .glass-effect { background: rgb(250 245 246 / 0.85); }
 .markdown-body a { color: var(--primary); }
 
 /* Faixa vinho de 5px no topo, como no Pi Paste */
-body { border-top: 5px solid #c51a4a; }
+body { border-top: 5px solid #d70f47; }
 
 /* Anel de foco verde-folha, como no Pi Paste */
 html.dark :focus-visible { outline-color: #a2ce72; }
