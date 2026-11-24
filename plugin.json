@@ -2,7 +2,7 @@
   "name": "blinko-tema",
   "author": "rtavares-g",
   "url": "https://github.com/rtavares-g/blinko-tema",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "minAppVersion": "0.0.0",
   "displayName": {
     "default": "Tema Raspberry Pi"

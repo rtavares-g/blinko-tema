@@ -5,8 +5,9 @@
      --background, --primary, --card…  (dele, cores CSS normais)
      --heroui-*                         (dos componentes HeroUI: "matiz saturação% luminosidade%", sem hsl())
    A cor primária escolhida em Preferências fica no style inline do <html>; o !important passa por cima.
-   Escuro: fundo #191216, card #261b21, texto #faf0f4, acento vinho #c51a4a (texto #ffffff)
-   Claro:  fundo #faf5f6, card #ffffff, texto #291c22, acento vinho #c51a4a (texto #fff) */
+   Tokens iguais aos do Pi Paste (bg / card / fg / mut / line / soft / acc / green):
+   Escuro: #191216 / #261b21 / #faf0f4 / #c1aab5 / #49303d / #3c202c / #c51a4a / #a2ce72
+   Claro:  #faf5f6 / #ffffff / #291c22 / #75636b / #eadce1 / #fff0f4 / #c51a4a / #47751c */
 
 /* ============================== ESCURO ============================== */
 html.dark {
@@ -16,32 +17,32 @@ html.dark {
   --secondbackground: #191216;          /* fundo da página */
   --background: #261b21;                /* cards, barra lateral, editor */
   --foreground: #faf0f4;
-  --hover: hsl(328 19% 20%);
-  --hover-foreground: hsl(331 12% 66%);
-  --desc: hsl(331 12% 60%);             /* datas, textos secundários */
+  --hover: #3c202c;
+  --hover-foreground: #c1aab5;
+  --desc: #c1aab5;             /* datas, textos secundários */
   --ignore: hsl(330 12% 42%);
   --tag: #c51a4a;
   --tag-foreground: #ffffff;
-  --scrollbar: hsl(328 20% 25%);
+  --scrollbar: #49303d;
   --popover: #261b21;
   --popover-foreground: #faf0f4;
-  --muted: hsl(328 19% 20%);
-  --muted-foreground: hsl(331 12% 66%);
+  --muted: #3c202c;
+  --muted-foreground: #c1aab5;
   --card: #261b21;
   --card-foreground: #faf0f4;
-  --border: hsl(328 19% 18%);
-  --input: hsl(328 20% 25%);
+  --border: #49303d;
+  --input: #49303d;
   --secondary: #c51a4a;
   --secondary-foreground: #ffffff;
-  --accent: hsl(328 19% 20%);
+  --accent: #3c202c;
   --accent-foreground: #faf0f4;
   --ring: #c51a4a;
   --header: rgb(25 18 22 / 0.85);
   --md-editor-bg: #261b21;
   --md-editor-text: #faf0f4;
   --md-editor-separator: hsl(329 16% 32%);
-  --md-editor-border: hsl(328 19% 20%);
-  --shadow: 0 0 1px 1px hsl(328 19% 20%);
+  --md-editor-border: #49303d;
+  --shadow: 0 0 1px 1px #49303d;
   --swiper-3d-shadow: rgb(250 240 244 / 12%);
 
   /* HeroUI: neutros grafite-vinho */
@@ -49,7 +50,7 @@ html.dark {
   --heroui-foreground: 336 50% 96.1%;
   --heroui-divider: 336 50% 96.1%;
   --heroui-overlay: 326 17% 4%;
-  --heroui-focus: 343.2 76.7% 43.7%;
+  --heroui-focus: 89 48% 63%;
   --heroui-content1: 327.3 16.9% 12.7%;
   --heroui-content1-foreground: 336 50% 96.1%;
   --heroui-content2: 328 19% 18%;
@@ -106,6 +107,10 @@ html.dark {
   --heroui-secondary-900: 343 80% 90%;
   --heroui-secondary: 343.2 76.7% 43.7%;
   --heroui-secondary-foreground: 0 0% 100%;
+
+  /* HeroUI: verde folha (sucesso, foco) — o --green do Pi Paste #a2ce72 */
+  --heroui-success: 89 48% 63%;
+  --heroui-success-foreground: 326 17% 8%;
 }
 
 /* ============================== CLARO ============================== */
@@ -116,7 +121,7 @@ html.light {
   --secondbackground: #faf5f6;
   --background: #ffffff;
   --foreground: #291c22;
-  --hover: hsl(345 30% 94%);
+  --hover: #fff0f4;
   --hover-foreground: #75636b;
   --desc: #75636b;
   --ignore: hsl(338 12% 67%);
@@ -125,7 +130,7 @@ html.light {
   --scrollbar: #eadce1;
   --popover: #ffffff;
   --popover-foreground: #291c22;
-  --muted: hsl(345 30% 94%);
+  --muted: #fff0f4;
   --muted-foreground: #75636b;
   --card: #ffffff;
   --card-foreground: #291c22;
@@ -133,7 +138,7 @@ html.light {
   --input: #eadce1;
   --secondary: #c51a4a;
   --secondary-foreground: #ffffff;
-  --accent: hsl(345 30% 94%);
+  --accent: #fff0f4;
   --accent-foreground: #291c22;
   --ring: #c51a4a;
   --header: rgb(250 245 246 / 0.9);
@@ -147,7 +152,7 @@ html.light {
   --heroui-background: 0 0% 100%;
   --heroui-foreground: 332.3 18.8% 13.5%;
   --heroui-divider: 332.3 18.8% 13.5%;
-  --heroui-focus: 343.2 76.7% 43.7%;
+  --heroui-focus: 91 61% 28%;
   --heroui-content1: 0 0% 100%;
   --heroui-content1-foreground: 332.3 18.8% 13.5%;
   --heroui-content2: 348 33.3% 97.1%;
@@ -203,6 +208,10 @@ html.light {
   --heroui-secondary-900: 343 77% 7%;
   --heroui-secondary: 343.2 76.7% 43.7%;
   --heroui-secondary-foreground: 0 0% 100%;
+
+  /* HeroUI: verde folha (sucesso, foco) — o --green do Pi Paste #47751c */
+  --heroui-success: 91 61% 28%;
+  --heroui-success-foreground: 0 0% 100%;
 }
 
 /* ============================== COMUNS ============================== */
@@ -214,3 +223,10 @@ html.light .glass-effect { background: rgb(250 245 246 / 0.85); }
 
 /* Links nas notas seguem o acento */
 .markdown-body a { color: var(--primary); }
+
+/* Faixa vinho de 5px no topo, como no Pi Paste */
+body { border-top: 5px solid #c51a4a; }
+
+/* Anel de foco verde-folha, como no Pi Paste */
+html.dark :focus-visible { outline-color: #a2ce72; }
+html.light :focus-visible { outline-color: #47751c; }
