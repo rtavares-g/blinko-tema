@@ -2,13 +2,13 @@
   "name": "blinko-tema",
   "author": "rtavares-g",
   "url": "https://github.com/rtavares-g/blinko-tema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "0.0.0",
   "displayName": {
     "default": "Tema Raspberry Pi"
   },
   "description": {
-    "default": "Paleta Raspberry Pi (vinho/rosa e grafite) no Blinko, claro e escuro."
+    "default": "Paleta Raspberry Pi (vinho e grafite) no Blinko, claro e escuro."
   },
   "readme": {
     "default": "README.md"

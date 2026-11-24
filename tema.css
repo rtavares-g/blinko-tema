@@ -5,13 +5,13 @@
      --background, --primary, --card…  (dele, cores CSS normais)
      --heroui-*                         (dos componentes HeroUI: "matiz saturação% luminosidade%", sem hsl())
    A cor primária escolhida em Preferências fica no style inline do <html>; o !important passa por cima.
-   Escuro: fundo #191216, card #261b21, texto #faf0f4, acento rosa #ef7295 (texto #2b0713)
+   Escuro: fundo #191216, card #261b21, texto #faf0f4, acento vinho #c51a4a (texto #ffffff)
    Claro:  fundo #faf5f6, card #ffffff, texto #291c22, acento vinho #c51a4a (texto #fff) */
 
 /* ============================== ESCURO ============================== */
 html.dark {
-  --primary: #ef7295 !important;
-  --primary-foreground: #2b0713 !important;
+  --primary: #c51a4a !important;
+  --primary-foreground: #ffffff !important;
 
   --secondbackground: #191216;          /* fundo da página */
   --background: #261b21;                /* cards, barra lateral, editor */
@@ -20,8 +20,8 @@ html.dark {
   --hover-foreground: hsl(331 12% 66%);
   --desc: hsl(331 12% 60%);             /* datas, textos secundários */
   --ignore: hsl(330 12% 42%);
-  --tag: #ef7295;
-  --tag-foreground: #2b0713;
+  --tag: #c51a4a;
+  --tag-foreground: #ffffff;
   --scrollbar: hsl(328 20% 25%);
   --popover: #261b21;
   --popover-foreground: #faf0f4;
@@ -31,11 +31,11 @@ html.dark {
   --card-foreground: #faf0f4;
   --border: hsl(328 19% 18%);
   --input: hsl(328 20% 25%);
-  --secondary: #ef7295;
-  --secondary-foreground: #2b0713;
+  --secondary: #c51a4a;
+  --secondary-foreground: #ffffff;
   --accent: hsl(328 19% 20%);
   --accent-foreground: #faf0f4;
-  --ring: #ef7295;
+  --ring: #c51a4a;
   --header: rgb(25 18 22 / 0.85);
   --md-editor-bg: #261b21;
   --md-editor-text: #faf0f4;
@@ -49,7 +49,7 @@ html.dark {
   --heroui-foreground: 336 50% 96.1%;
   --heroui-divider: 336 50% 96.1%;
   --heroui-overlay: 326 17% 4%;
-  --heroui-focus: 343.2 79.6% 69.2%;
+  --heroui-focus: 343.2 76.7% 43.7%;
   --heroui-content1: 327.3 16.9% 12.7%;
   --heroui-content1-foreground: 336 50% 96.1%;
   --heroui-content2: 328 19% 18%;
@@ -81,31 +81,31 @@ html.dark {
   --heroui-foreground-800: 336 45% 92%;
   --heroui-foreground-900: 336 50% 96.1%;
 
-  /* HeroUI: acento rosa */
+  /* HeroUI: acento vinho */
   --heroui-primary-50: 343 45% 10%;
   --heroui-primary-100: 343 45% 14%;
   --heroui-primary-200: 343 50% 19%;
   --heroui-primary-300: 343 55% 26%;
   --heroui-primary-400: 343 60% 34%;
-  --heroui-primary-500: 343 70% 45%;
-  --heroui-primary-600: 343 78% 58%;
-  --heroui-primary-700: 343.2 79.6% 69.2%;
-  --heroui-primary-800: 342.9 82.3% 75.7%;
+  --heroui-primary-500: 343 72% 38%;
+  --heroui-primary-600: 343.2 76.7% 43.7%;
+  --heroui-primary-700: 343 70% 55%;
+  --heroui-primary-800: 343 77% 64%;
   --heroui-primary-900: 343 80% 90%;
-  --heroui-primary: 343.2 79.6% 69.2%;
-  --heroui-primary-foreground: 340 72% 9.8%;
+  --heroui-primary: 343.2 76.7% 43.7%;
+  --heroui-primary-foreground: 0 0% 100%;
   --heroui-secondary-50: 343 45% 10%;
   --heroui-secondary-100: 343 45% 14%;
   --heroui-secondary-200: 343 50% 19%;
   --heroui-secondary-300: 343 55% 26%;
   --heroui-secondary-400: 343 60% 34%;
-  --heroui-secondary-500: 343 70% 45%;
-  --heroui-secondary-600: 343 78% 58%;
-  --heroui-secondary-700: 343.2 79.6% 69.2%;
-  --heroui-secondary-800: 342.9 82.3% 75.7%;
+  --heroui-secondary-500: 343 72% 38%;
+  --heroui-secondary-600: 343.2 76.7% 43.7%;
+  --heroui-secondary-700: 343 70% 55%;
+  --heroui-secondary-800: 343 77% 64%;
   --heroui-secondary-900: 343 80% 90%;
-  --heroui-secondary: 343.2 79.6% 69.2%;
-  --heroui-secondary-foreground: 340 72% 9.8%;
+  --heroui-secondary: 343.2 76.7% 43.7%;
+  --heroui-secondary-foreground: 0 0% 100%;
 }
 
 /* ============================== CLARO ============================== */
@@ -206,7 +206,7 @@ html.light {
 }
 
 /* ============================== COMUNS ============================== */
-html.dark ::selection { background-color: #ef7295; color: #2b0713; }
+html.dark ::selection { background-color: #c51a4a; color: #ffffff; }
 html.light ::selection { background-color: #c51a4a; color: #ffffff; }
 
 html.dark .glass-effect { background: rgb(25 18 22 / 0.8); }

@@ -1,12 +1,12 @@
 # blinko-tema
 
 Tema "Raspberry Pi" para o [Blinko](https://github.com/blinkospace/blinko), como plugin — mesma paleta do
-Cockpit, Duplicati, Pi Paste e Clipboard Bridge: vinho `#c51a4a` no claro, rosa `#ef7295` no escuro,
+Cockpit, Duplicati, Pi Paste e Clipboard Bridge: acento vinho `#c51a4a` nos dois modos,
 neutros grafite-vinho. Vale nos dois temas do Blinko (Preferências → tema claro/escuro/sistema).
 
 | Modo | Fundo | Cards / barra lateral | Texto | Acento (texto sobre ele) |
 |---|---|---|---|---|
-| Escuro | `#191216` | `#261b21` | `#faf0f4` | rosa `#ef7295` (`#2b0713`) |
+| Escuro | `#191216` | `#261b21` | `#faf0f4` | vinho `#c51a4a` (`#fff`) |
 | Claro | `#faf5f6` | `#ffffff` | `#291c22` | vinho `#c51a4a` (`#fff`) |
 
 ## Instalar
